@@ -1,3 +1,18 @@
+def addFunc(firstNumber, secondNumber):
+    return int(firstNumber) + int(secondNumber)
+
+def subFunc(firstNumber, secondNumber):
+    return int(firstNumber) - int(secondNumber)
+
+def multipleFunc(firstNumber, secondNumber):
+    return int(firstNumber) * int(secondNumber)
+
+def divisionFunc(firstNumber, secondNumber):
+    if(secondNumber<="0"):
+        return 0
+    else:
+        return int(firstNumber) / int(secondNumber)
+
 def calculator():
     
     firstNumber = input("Enter First Number: ")
@@ -6,13 +21,13 @@ def calculator():
     operator = input("+, -, *, / : ")
 
     if(operator=="+"):
-        print(int(firstNumber) + int(secondNumber))
+        print(addFunc(firstNumber,secondNumber))
     elif(operator=="-"):
-        print(int(firstNumber) - int(secondNumber))
+        print(subFunc(firstNumber,secondNumber))
     elif(operator=="*"):
-        print(int(firstNumber) * int(secondNumber))
+        print(multipleFunc(firstNumber,secondNumber))
     elif(operator=="/"):
-        print(int(firstNumber)/int(secondNumber))
+        print(divisionFunc(firstNumber, secondNumber))
     else:
         print("Please Choose Right operator")
     
