@@ -9,7 +9,7 @@ def multipleFunc(firstNumber, secondNumber):
 
 def divisionFunc(firstNumber, secondNumber):
     if(secondNumber<="0"):
-        return 0
+        return "Please enter second number greater then 0"
     else:
         return int(firstNumber) / int(secondNumber)
 
